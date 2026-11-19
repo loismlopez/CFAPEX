@@ -1,0 +1,11 @@
+# Copy to wrangler.cfapex.toml for a NEW Worker, then replace the Worker name and KV namespace ID.
+# CFAPEX 1.5: XHTTP uses stream-one, no Durable Object is needed or bound.
+# Wrangler creates nothing extra during deployment; Dashboard JS paste works for this version.
+name = "cfapex"
+main = "CFAPEX-worker.1.5.js"
+compatibility_date = "2026-11-17"
+keep_vars = true
+
+[[kv_namespaces]]
+binding = "K"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
